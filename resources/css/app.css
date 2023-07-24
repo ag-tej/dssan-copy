@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button {
+        @apply text-white bg-blue-600 hover:bg-blue-700 drop-shadow-sm font-medium rounded text-sm px-3 py-2 text-center inline-flex items-center;
+    }
+
+    .form {
+        @apply w-2/4 mx-auto mb-16 bg-white p-6 rounded-lg;
+    }
+
+    .form-label {
+        @apply block mb-1 text-sm font-medium text-gray-900;
+    }
+
+    .form-input {
+        @apply block w-full text-sm p-2.5 rounded text-gray-900 bg-gray-50 border border-gray-300 focus:outline-none focus:border-blue-600;
+    }
+
+    .message-box {
+        @apply flex items-center w-full max-w-xs p-2 bg-white border rounded-sm shadow origin-top duration-500 animate-toast-notify;
+    }
+
+    .icon {
+        @apply inline-flex items-center justify-center flex-shrink-0 w-8 h-8 rounded-lg;
+    }
+
+    .close-btn {
+        @apply ml-auto bg-white text-gray-500 hover:text-gray-900 rounded-lg items-center justify-center inline-flex h-8 w-8;
+    }
+
+    .feedback-form {
+        @apply fixed w-84 sm:w-92 lg:w-96 h-136 top-1/2 left-1/2 -mt-68 -ml-42 sm:-ml-46 lg:-ml-48;
+    }
+
+    .notification {
+        @apply fixed w-72 h-40 top-1/2 left-1/2 -mt-20 -ml-36;
+    }
+}
+
+@layer base {
+    html {
+        font-family: Poppins, system-ui, sans-serif;
+    }
+}
